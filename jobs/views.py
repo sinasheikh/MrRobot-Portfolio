@@ -3,6 +3,6 @@ from .models import Job
 
 
 # Create your views here.
-def elliot(request):
+def home(request):
     jobs_objects = Job.objects.all()
-    return render(request, 'jobs/elliot.html', {'jobs_list': jobs_objects})
+    return render(request, 'jobs/home.html', {'jobs_list': jobs_objects})
